@@ -12,3 +12,7 @@ function getFooterCopy(isIndex) {
     }
     return string;
 }
+
+function getLatestNotification() {
+    return "<strong>Urgent requirement</strong> - complete by EOD";
+}
