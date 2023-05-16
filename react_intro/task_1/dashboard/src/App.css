@@ -1,30 +1,26 @@
+
+.App-logo {
+  height: 150px;
+  width: 150px;
+}
+
 .App-header {
   display: flex;
   align-items: center;
-  border-bottom:solid #e0344a;
-
-}
-
-.App-header h1 {
-  color: #e01d3f;
-  font-size: 30px;
+  color: #e0344a;
+  border-bottom: 3px solid #e0344a;
+  width: 100%;
 }
 
 .App-body {
-  color: black;
-  margin: 45px;
-}
-
-.App-header img {
-  width: 180px;
+  padding: 16px 24px;
 }
 
 .App-footer {
-  justify-content: center;
-  width: 100%;
-  display: flex;
-  position: fixed;
+  text-align: center;
+  border-top: 3px solid #e0344a;
   bottom: 0;
-  border-top:solid #e01d3f;
+  width: 100%;
+  position: fixed;
   font-style: italic;
 }
