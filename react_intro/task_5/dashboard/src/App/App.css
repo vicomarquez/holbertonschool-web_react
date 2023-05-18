@@ -1,0 +1,26 @@
+
+.App-logo {
+  height: 150px;
+  width: 150px;
+}
+
+.App-header {
+  display: flex;
+  align-items: center;
+  color: #e0344a;
+  border-bottom: 3px solid #e0344a;
+  width: 100%;
+}
+
+.App-body {
+  padding: 16px 24px;
+}
+
+.App-footer {
+  text-align: center;
+  border-top: 3px solid #e0344a;
+  bottom: 0;
+  width: 100%;
+  position: fixed;
+  font-style: italic;
+}
