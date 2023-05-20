@@ -10,10 +10,10 @@ module.exports = {
     path: path.resolve('./dist'),
   },
   devServer: {
+    historyApiFallback: true,
     hot: true,
-    contentBase: path.resolve('./dist'),
     compress: true,
-    port: 3000,
+    static: path.resolve('./dist'),
   },
   module: {
     rules: [
@@ -22,7 +22,7 @@ module.exports = {
         use: ['style-loader', 'css-loader'],
       },
       {
-        test: /\.(jpg|png)$/i,
+        test: /\.(gif|png|jpe?g|svg)$/i,
         use: [
           'file-loader',
           {
@@ -35,7 +35,7 @@ module.exports = {
         ],
       },
       {
-        test: /\.jsx?$/i,
+        test: /\.(js|djsx)?$/,
         exclude: /node_modules/,
         use: {
           loader: 'babel-loader',
@@ -43,4 +43,10 @@ module.exports = {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: path.resolve('./dist/index.html'),
+      filename: 'index.html'
+    })
+  ]
 };
