@@ -1,0 +1,13 @@
+.Notifications {
+  border: 2px solid #e01d3f;
+  padding: 10px;
+  border-style: dashed;
+}
+
+[data-notification-type="default"] {
+  color: blue;
+}
+
+[data-notification-type="urgent"] {
+  color: red;
+}

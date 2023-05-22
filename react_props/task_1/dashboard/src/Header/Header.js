@@ -1,17 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import holberton from '../assets/holberton-logo.jpg';
+import './Header.css';
 
-function header() {
+function Header() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-      </header>
-    </div>
+    <>
+      <div className="App-header">
+        <img src={holberton} className="App-logo" alt="logo" />
+          <h1>School dashboard</h1>
+      </div>
+    </>
   );
-}
+};
 
-export default App;
+export default Header;
