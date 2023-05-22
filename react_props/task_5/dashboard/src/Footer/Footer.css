@@ -1,0 +1,8 @@
+.App-footer {
+    text-align: center;
+    border-top: 3px solid #e0344a;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+    font-style: italic;
+  }
